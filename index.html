@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StyleMatch AI Privacy Policy — AI-powered fashion recommendation application" />
+  <title>Privacy Policy — StyleMatch AI</title>
+  <style>
+    /* ── Reset ──────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Tokens ─────────────────────────────────────────────────── */
+    :root {
+      --navy:    #0F2137;
+      --slate:   #1E3A5F;
+      --steel:   #2C5282;
+      --ice:     #EBF4FF;
+      --ice-deep:#DBEAFE;
+      --muted:   #64748B;
+      --ink:     #0F172A;
+      --border:  #CBD5E1;
+      --light:   #F8FAFC;
+      --white:   #FFFFFF;
+      --amber-bg:#FFFBEB;
+      --amber-bd:#F59E0B;
+      --green-bg:#ECFDF5;
+      --green-bd:#10B981;
+      --radius:  6px;
+    }
+
+    /* ── Base ───────────────────────────────────────────────────── */
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--ink);
+      background: var(--light);
+    }
+
+    a { color: var(--steel); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Layout ─────────────────────────────────────────────────── */
+    .page {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    /* ── Top bar ────────────────────────────────────────────────── */
+    .topbar {
+      grid-column: 1 / -1;
+      background: var(--navy);
+      color: #fff;
+      padding: 14px 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .topbar .logo {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .topbar .divider { color: #4A6FA5; }
+    .topbar .doc-title { font-size: 14px; color: #93C5D8; }
+    .topbar .effective {
+      margin-left: auto;
+      font-size: 12px;
+      color: #4A6FA5;
+    }
+
+    /* ── Sidebar ────────────────────────────────────────────────── */
+    .sidebar {
+      background: var(--white);
+      border-right: 1px solid var(--border);
+      padding: 28px 0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0 20px 10px;
+    }
+    .sidebar nav a {
+      display: block;
+      padding: 6px 20px;
+      font-size: 13px;
+      color: var(--muted);
+      border-left: 3px solid transparent;
+      transition: all 0.15s;
+      line-height: 1.4;
+    }
+    .sidebar nav a:hover {
+      color: var(--steel);
+      border-left-color: var(--steel);
+      background: var(--ice);
+      text-decoration: none;
+    }
+    .sidebar nav a.active {
+      color: var(--steel);
+      border-left-color: var(--steel);
+      background: var(--ice);
+      font-weight: 600;
+    }
+
+    /* ── Main content ───────────────────────────────────────────── */
+    main {
+      padding: 48px 56px 80px;
+      max-width: 860px;
+    }
+
+    /* ── Cover block ────────────────────────────────────────────── */
+    .cover {
+      background: var(--navy);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      margin-bottom: 36px;
+    }
+    .cover .eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #93C5D8;
+      margin-bottom: 10px;
+    }
+    .cover h1 {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .cover .subtitle {
+      font-size: 15px;
+      color: #93C5D8;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .cover .meta {
+      font-size: 13px;
+      color: #4A6FA5;
+      padding-top: 16px;
+      border-top: 1px solid #1E3A5F;
+    }
+
+    /* ── Callout boxes ──────────────────────────────────────────── */
+    .callout {
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+    .callout-green {
+      background: var(--green-bg);
+      border: 1px solid var(--green-bd);
+    }
+    .callout-amber {
+      background: var(--amber-bg);
+      border: 1px solid var(--amber-bd);
+    }
+    .callout-blue {
+      background: var(--ice);
+      border: 1px solid var(--ice-deep);
+    }
+    .callout strong { margin-right: 4px; }
+
+    /* ── Section headings ───────────────────────────────────────── */
+    .section {
+      margin-bottom: 52px;
+      scroll-margin-top: 24px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--navy);
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--steel);
+      margin-bottom: 18px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 10px;
+    }
+    p { margin-bottom: 12px; }
+
+    /* ── Lists ──────────────────────────────────────────────────── */
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 14px;
+    }
+    ul li {
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+    ol {
+      padding-left: 22px;
+      margin: 10px 0 14px;
+    }
+    ol li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    /* ── Tables ─────────────────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead tr { background: var(--navy); color: #fff; }
+    thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    tbody tr:nth-child(even) { background: var(--ice); }
+    tbody tr:nth-child(odd)  { background: var(--white); }
+    tbody td {
+      padding: 10px 14px;
+      border-top: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    tbody td:first-child { font-weight: 600; white-space: nowrap; }
+    code {
+      font-family: 'Courier New', monospace;
+      background: var(--ice);
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    /* ── Footer ─────────────────────────────────────────────────── */
+    footer {
+      grid-column: 1 / -1;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+
+    /* ── Mobile ─────────────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .page { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+      main { padding: 28px 20px 60px; }
+      .topbar { padding: 12px 20px; }
+      .cover { padding: 24px 20px; }
+      .cover h1 { font-size: 26px; }
+      footer { flex-direction: column; gap: 6px; text-align: center; }
+    }
+
+    /* ── Print ──────────────────────────────────────────────────── */
+    @media print {
+      .sidebar, .topbar, footer { display: none; }
+      .page { display: block; }
+      main { padding: 0; max-width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ── Top bar ──────────────────────────────────────────────── -->
+  <header class="topbar">
+    <span class="logo">StyleMatch AI</span>
+    <span class="divider">|</span>
+    <span class="doc-title">Privacy Policy</span>
+    <span class="effective">Effective: 16 March 2026 &nbsp;·&nbsp; Version 1.0</span>
+  </header>
+
+  <!-- ── Sidebar nav ──────────────────────────────────────────── -->
+  <aside class="sidebar">
+    <p class="sidebar-label">Contents</p>
+    <nav id="toc">
+      <a href="#intro">1. Introduction</a>
+      <a href="#collect">2. Information We Collect</a>
+      <a href="#use">3. How We Use Your Information</a>
+      <a href="#third-party">4. Third-Party Services</a>
+      <a href="#pinterest">5. Pinterest-Specific Disclosures</a>
+      <a href="#retention">6. Data Retention</a>
+      <a href="#rights">7. Your Rights</a>
+      <a href="#security">8. Security</a>
+      <a href="#children">9. Children's Privacy</a>
+      <a href="#changes">10. Changes to This Policy</a>
+      <a href="#developer">11. Developer API</a>
+      <a href="#contact">12. Contact Us</a>
+    </nav>
+  </aside>
+
+  <!-- ── Main ─────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- Cover -->
+    <div class="cover">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>StyleMatch AI</h1>
+      <p class="subtitle">AI-Powered Fashion Recommendation Application</p>
+      <p class="meta">Effective Date: 16 March 2026 &nbsp;·&nbsp; Version 1.0</p>
+    </div>
+
+    <!-- At a glance -->
+    <div class="callout callout-green">
+      <strong>✅ At a glance:</strong> StyleMatch AI does not store personal user data. Shoe images are processed in memory and discarded immediately after outfit generation. Pinterest boards are read only when you explicitly grant access and are never stored. No data is sold to third parties.
+    </div>
+
+    <!-- ── 1. Introduction ─────────────────────────────────────── -->
+    <div class="section" id="intro">
+      <h2>1. Introduction</h2>
+      <p>StyleMatch AI ("we," "our," or "the Application") is an AI-powered fashion recommendation service that analyses a photograph of a shoe and returns a complete outfit recommendation. This Privacy Policy explains what information we collect, how we use it, and the choices available to you.</p>
+      <p>This policy applies to:</p>
+      <ul>
+        <li>the StyleMatch AI web application at <strong>stylematch.ai</strong></li>
+        <li>the developer API available at <strong>api.stylematch.ai</strong></li>
+        <li>any third-party integrations you authorise, including Pinterest</li>
+      </ul>
+      <p><em>This policy is written to satisfy the requirements of Pinterest's Developer API Terms of Service for applications that request read access to user boards.</em></p>
+    </div>
+
+    <!-- ── 2. Information We Collect ──────────────────────────── -->
+    <div class="section" id="collect">
+      <h2>2. Information We Collect</h2>
+
+      <h3>2.1 Information You Provide Directly</h3>
+      <p>When you use the Application, you may submit:</p>
+      <ul>
+        <li>A photograph of a shoe (uploaded or taken via camera)</li>
+        <li>Occasion, season, and style preferences selected in the interface</li>
+        <li>A session identifier generated automatically in your browser</li>
+      </ul>
+      <div class="callout callout-amber">
+        <strong>⚠ Important:</strong> Shoe photographs are processed in memory solely to generate an outfit recommendation. They are not stored on our servers, not logged to any database, and not retained after the recommendation is returned to your browser.
+      </div>
+
+      <h3>2.2 Information Collected Automatically</h3>
+      <p>When you use the Application we may collect limited technical data for operational purposes:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Data type</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>Request timestamps</td><td>Rate limiting and abuse prevention</td></tr>
+            <tr><td>API response latency</td><td>Performance monitoring</td></tr>
+            <tr><td>HTTP status codes</td><td>Error tracking and reliability</td></tr>
+            <tr><td>Anonymised session ID</td><td>Linking steps within a single request (2-hour TTL, then deleted)</td></tr>
+            <tr><td>Rough geographic region (country only)</td><td>Content localisation (currency, available retailers)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do not collect: IP addresses stored beyond the current request, browser fingerprints, device identifiers, or behavioural analytics.</p>
+
+      <h3>2.3 Pinterest Data (Optional Integration)</h3>
+      <p>If you choose to connect your Pinterest account, the Application requests read-only OAuth 2.0 access to your public and private boards. Specifically, we request the following Pinterest API scopes:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Pinterest scope</th><th>Why we need it</th></tr></thead>
+          <tbody>
+            <tr><td><code>boards:read</code></td><td>Read the names and descriptions of your boards to identify style preferences</td></tr>
+            <tr><td><code>pins:read</code></td><td>Read pin images from your fashion-related boards to extract colour palettes and style signals</td></tr>
+            <tr><td><code>user_accounts:read</code></td><td>Read your display name solely to personalise the interface greeting</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Pinterest data is used exclusively to:</p>
+      <ul>
+        <li>Identify dominant style preferences from your saved boards</li>
+        <li>Extract colour palette and aesthetic signals to improve outfit matching accuracy</li>
+        <li>Build a style profile used only within your current session</li>
+      </ul>
+      <p>Pinterest data is <strong>NOT</strong> used to:</p>
+      <ul>
+        <li>Build advertising profiles or be sold to advertisers</li>
+        <li>Be shared with any third party other than the AI inference services described in Section 4</li>
+        <li>Train or fine-tune any machine learning model</li>
+        <li>Be retained beyond your session unless you explicitly opt in to style profile caching (see Section 3.2)</li>
+      </ul>
+    </div>
+
+    <!-- ── 3. How We Use Information ─────────────────────────── -->
+    <div class="section" id="use">
+      <h2>3. How We Use Your Information</h2>
+
+      <h3>3.1 Core Functionality</h3>
+      <p>All information collected is used solely to provide outfit recommendations. The processing pipeline is:</p>
+      <ol>
+        <li>Shoe image is received and passed to the CLIP vision model in memory</li>
+        <li>Shoe attributes (type, colour, formality score) are extracted — the original image is discarded</li>
+        <li>Outfit items are matched using vector similarity search against our fashion catalog</li>
+        <li>If Pinterest is connected, your board data is analysed to refine style weighting</li>
+        <li>The recommendation is returned to your browser and all intermediate data is discarded</li>
+      </ol>
+
+      <h3>3.2 Optional Style Profile Caching</h3>
+      <p>With your explicit consent, we may cache a derived style profile (not your raw Pinterest data or images) to improve the accuracy of future recommendations. This cached profile contains:</p>
+      <ul>
+        <li>A list of dominant style categories (e.g. "smart casual," "minimalist")</li>
+        <li>A colour palette summary (e.g. "earth tones," "monochrome")</li>
+        <li>A formality preference score on a 1–10 scale</li>
+      </ul>
+      <p>This cached profile does <strong>NOT</strong> contain any Pinterest pin images, board names, personal identifiers, or your shoe photographs.</p>
+      <p>Cached profiles are stored for a maximum of 30 days and can be deleted at any time by revoking Pinterest access through your Pinterest account settings or contacting us at <a href="mailto:privacy@stylematch.ai">privacy@stylematch.ai</a>.</p>
+
+      <h3>3.3 Blockchain Ledger (OutfitLedgerTool)</h3>
+      <p>If the blockchain ledger feature is enabled, an anonymised record of each approved outfit recommendation is written to the Hedera Consensus Service. This record contains:</p>
+      <ul>
+        <li>An anonymous outfit identifier (not linked to your name, email, or device)</li>
+        <li>A pseudonymous session user ID (a random string, not your Pinterest username)</li>
+        <li>The shoe type and style category</li>
+        <li>The list of recommended outfit item names</li>
+        <li>A UTC timestamp</li>
+      </ul>
+      <div class="callout callout-blue">
+        <strong>🔒 Immutability notice:</strong> Records written to the Hedera Consensus Service are permanent and cannot be deleted. We therefore write only anonymised, non-personal data. No information that could directly identify you is included in ledger records.
+      </div>
+    </div>
+
+    <!-- ── 4. Third-Party Services ────────────────────────────── -->
+    <div class="section" id="third-party">
+      <h2>4. Third-Party Services</h2>
+      <p>The Application uses the following third-party services to function. Each service receives only the minimum data necessary:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Service</th><th>Purpose — Data shared</th></tr></thead>
+          <tbody>
+            <tr><td>Groq (LLM API)</td><td>Outfit reasoning and quality review — outfit item descriptions only, no images, no user identifiers</td></tr>
+            <tr><td>Pinecone</td><td>Vector similarity search for outfit matching — anonymised embedding vectors only</td></tr>
+            <tr><td>Stability AI</td><td>Outfit image generation — a text prompt describing outfit items only</td></tr>
+            <tr><td>Serpapi / Google Shopping</td><td>Product search — a text query describing an outfit item only</td></tr>
+            <tr><td>Hedera Network</td><td>Immutable ledger — anonymised outfit record as described in Section 3.3</td></tr>
+            <tr><td>Pinterest API</td><td>Style inspiration — OAuth token scoped to read-only board access</td></tr>
+            <tr><td>Redis (session cache)</td><td>Short-term session state — anonymous session ID and derived style signals, auto-deleted after 2 hours</td></tr>
+            <tr><td>PostgreSQL (database)</td><td>Optional style profile cache — only if you opt in; deleted after 30 days or on request</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do not use Google Analytics, Meta Pixel, TikTok Pixel, or any third-party advertising or tracking services.</p>
+    </div>
+
+    <!-- ── 5. Pinterest-Specific Disclosures ─────────────────── -->
+    <div class="section" id="pinterest">
+      <h2>5. Pinterest-Specific Disclosures</h2>
+      <p>This section is required by the Pinterest API Terms of Service and addresses Pinterest's developer policy requirements directly.</p>
+
+      <h3>5.1 Data Use Restrictions</h3>
+      <p>In compliance with Pinterest's Developer API Terms, we confirm that Pinterest user data accessed through the API:</p>
+      <ul>
+        <li>Is used only for the purpose described to the user at the time of authorisation (fashion recommendation)</li>
+        <li>Is not used for advertising targeting or to build advertising profiles</li>
+        <li>Is not sold, licensed, or transferred to third parties except as listed in Section 4</li>
+        <li>Is not used to train machine learning models</li>
+        <li>Is not used to create derivative datasets</li>
+        <li>Is not combined with other personal data sources to build profiles beyond what is needed for outfit recommendations</li>
+      </ul>
+
+      <h3>5.2 Scope of Access</h3>
+      <p>The Application requests the minimum Pinterest OAuth scopes necessary to provide its functionality. We do not request write access, social graph access, or access to follower data. All access is read-only.</p>
+
+      <h3>5.3 Revoking Pinterest Access</h3>
+      <p>You can revoke the Application's access to your Pinterest account at any time by:</p>
+      <ul>
+        <li>Visiting <strong>pinterest.com → Settings → Security → Apps with access → StyleMatch AI → Revoke</strong></li>
+        <li>Emailing <a href="mailto:privacy@stylematch.ai">privacy@stylematch.ai</a> with the subject line "Revoke Pinterest Access"</li>
+      </ul>
+      <p>Upon revocation, we will delete any cached style profile derived from your Pinterest data within 48 hours.</p>
+
+      <h3>5.4 Pinterest as Data Controller</h3>
+      <p>Pinterest, Inc. is an independent data controller for data you share with Pinterest directly. This Privacy Policy does not govern Pinterest's use of your data. Please review Pinterest's Privacy Policy at <a href="https://pinterest.com/about/privacy" target="_blank" rel="noreferrer">pinterest.com/about/privacy</a> for information about how Pinterest handles your data.</p>
+    </div>
+
+    <!-- ── 6. Data Retention ──────────────────────────────────── -->
+    <div class="section" id="retention">
+      <h2>6. Data Retention</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Data type</th><th>Retention period</th></tr></thead>
+          <tbody>
+            <tr><td>Shoe photographs</td><td>Not stored — discarded immediately after processing</td></tr>
+            <tr><td>Session state (Redis)</td><td>2 hours from last activity, then auto-deleted</td></tr>
+            <tr><td>Outfit recommendations</td><td>Returned to your browser only — not stored server-side</td></tr>
+            <tr><td>Pinterest access token</td><td>Duration of your session only, unless you opt in to profile caching</td></tr>
+            <tr><td>Derived style profile (opt-in)</td><td>30 days, or until you revoke access</td></tr>
+            <tr><td>Hedera ledger records</td><td>Permanent and immutable (anonymised only — see Section 3.3)</td></tr>
+            <tr><td>Server access logs</td><td>7 days, then auto-deleted (contain no personal identifiers)</td></tr>
+            <tr><td>API error logs</td><td>30 days, then auto-deleted (contain no personal identifiers)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ── 7. Your Rights ─────────────────────────────────────── -->
+    <div class="section" id="rights">
+      <h2>7. Your Rights</h2>
+      <p>Depending on your location, you may have rights under applicable data protection laws including the GDPR (EU/UK), CCPA (California), NDPR (Nigeria), and others. Because we collect minimal personal data, most requests will result in confirmation that we hold no data about you.</p>
+
+      <h3>7.1 Rights Available to All Users</h3>
+      <ul>
+        <li><strong>Right to know</strong> — you can ask what data we hold about you</li>
+        <li><strong>Right to deletion</strong> — you can request deletion of your style profile (if cached)</li>
+        <li><strong>Right to opt out</strong> — you can disable Pinterest integration and style profile caching at any time</li>
+        <li><strong>Right not to be subject to automated decisions with legal effect</strong> — outfit recommendations are non-binding and purely informational</li>
+      </ul>
+
+      <h3>7.2 EU/UK GDPR Specific Rights</h3>
+      <ul>
+        <li><strong>Right to access (Article 15)</strong> — request a copy of any personal data we hold</li>
+        <li><strong>Right to rectification (Article 16)</strong> — correct inaccurate data</li>
+        <li><strong>Right to erasure (Article 17)</strong> — request deletion of personal data</li>
+        <li><strong>Right to restriction of processing (Article 18)</strong></li>
+        <li><strong>Right to data portability (Article 20)</strong> — receive your style profile in machine-readable format</li>
+        <li><strong>Right to object (Article 21)</strong></li>
+      </ul>
+      <p>Our lawful basis for processing is: (a) contractual necessity (providing the recommendation service you requested) and (b) legitimate interests (service reliability and security). We do not rely on consent as a lawful basis except for optional style profile caching.</p>
+      <p>To exercise any of these rights, contact <a href="mailto:privacy@stylematch.ai">privacy@stylematch.ai</a>. We will respond within 30 days.</p>
+    </div>
+
+    <!-- ── 8. Security ────────────────────────────────────────── -->
+    <div class="section" id="security">
+      <h2>8. Security</h2>
+      <p>We implement appropriate technical and organisational measures to protect data in transit and at rest:</p>
+      <ul>
+        <li>All API endpoints are served over HTTPS/TLS 1.3</li>
+        <li>API keys and credentials are stored as environment variables, never in source code</li>
+        <li>Database access is restricted to the application server via private network</li>
+        <li>Session tokens are short-lived (2 hours) and stored only in server-side Redis</li>
+        <li>The application does not use cookies for tracking; a session token is stored in memory only during your active session</li>
+      </ul>
+      <p>No method of transmission over the internet or method of electronic storage is 100% secure. We will notify affected users within 72 hours of becoming aware of a data breach that affects personal data.</p>
+    </div>
+
+    <!-- ── 9. Children's Privacy ──────────────────────────────── -->
+    <div class="section" id="children">
+      <h2>9. Children's Privacy</h2>
+      <p>The Application is not directed at children under the age of 13 (or 16 in the EU). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact <a href="mailto:privacy@stylematch.ai">privacy@stylematch.ai</a> and we will promptly delete it.</p>
+    </div>
+
+    <!-- ── 10. Changes ────────────────────────────────────────── -->
+    <div class="section" id="changes">
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy to reflect changes in our practices or applicable law. When we make material changes, we will:</p>
+      <ul>
+        <li>Update the effective date at the top of this document</li>
+        <li>Post a notice in the Application for at least 30 days</li>
+        <li>If you have opted in to style profile caching, send an email notification to the address associated with your account</li>
+      </ul>
+      <p>Your continued use of the Application after changes take effect constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <!-- ── 11. Developer API ───────────────────────────────────── -->
+    <div class="section" id="developer">
+      <h2>11. Developer API</h2>
+      <p>If you access StyleMatch AI functionality through the developer API (api.stylematch.ai), this policy applies to both you as the developer and to end users of applications you build on top of the API.</p>
+
+      <h3>11.1 Developer Responsibilities</h3>
+      <p>As a developer using the API, you agree to:</p>
+      <ul>
+        <li>Display a link to this Privacy Policy to end users of your application</li>
+        <li>Obtain any additional consent required by applicable law in the jurisdictions where your application operates</li>
+        <li>Not pass personally identifiable information to the API beyond what is described in this policy</li>
+        <li>Not use the API to build surveillance, profiling, or advertising systems</li>
+        <li>Comply with the Pinterest Developer API Terms of Service if your application integrates Pinterest</li>
+      </ul>
+
+      <h3>11.2 API Data Handling</h3>
+      <p>The API does not log request bodies. Request metadata (timestamp, endpoint called, response code, latency) is retained for 7 days for operational purposes. API keys should be treated as secrets and must not be embedded in client-side code.</p>
+    </div>
+
+    <!-- ── 12. Contact ────────────────────────────────────────── -->
+    <div class="section" id="contact">
+      <h2>12. Contact Us</h2>
+      <p>For privacy questions, data access requests, or to exercise your rights:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Channel</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Email</td><td><a href="mailto:privacy@stylematch.ai">privacy@stylematch.ai</a></td></tr>
+            <tr><td>Subject line</td><td>Use "Privacy Request" for faster routing</td></tr>
+            <tr><td>Response time</td><td>We aim to respond within 5 business days; legal requests within 30 days</td></tr>
+            <tr><td>Postal address</td><td>StyleMatch AI — [Your registered address]</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────────── -->
+  <footer>
+    <span>StyleMatch AI &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Effective 16 March 2026</span>
+    <span><a href="mailto:privacy@stylematch.ai">privacy@stylematch.ai</a></span>
+  </footer>
+
+</div><!-- /page -->
+
+<script>
+  // Highlight active sidebar link on scroll
+  const sections = document.querySelectorAll('.section');
+  const navLinks  = document.querySelectorAll('#toc a');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`#toc a[href="#${entry.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
